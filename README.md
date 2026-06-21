@@ -32,8 +32,14 @@ This will automatically download the model (if it's not already in `.cache/`) an
 
 ### Other Recommended Models to Try
 
+**Text/Code Models:**
 - **Qwen 2.5 (Fast & Smart)**: `mlx-community/Qwen2.5-7B-Instruct-4bit`
 - **Phi 3.5 (Small & Fast)**: `mlx-community/Phi-3.5-mini-instruct-4bit`
+
+**Vision Models (Image Understanding):**
+- **Qwen2-VL (Excellent Multimodal)**: `mlx-community/Qwen2-VL-7B-Instruct-4bit`
+- **Llama 3.2 Vision (Strong overall)**: `mlx-community/Llama-3.2-11B-Vision-Instruct-4bit`
+- **Pixtral 12B**: `mlx-community/pixtral-12b-4bit`
 
 ## Usage with Cursor/Claude Code/etc.
 
