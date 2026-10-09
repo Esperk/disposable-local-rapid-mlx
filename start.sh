@@ -1,15 +1,21 @@
 #!/bin/bash
 
-if [ -z "$1" ]; then
-  echo "Usage: ./start.sh <model-name>"
-  echo "Example: ./start.sh mlx-community/Llama-3.2-3B-Instruct-4bit"
-  exit 1
-fi
-
-MODEL_NAME=$1
-
 # Make sure we're in the right directory
 cd "$(dirname "$0")"
+
+# Load environment variables from .env file (like HF_TOKEN)
+if [ -f .env ]; then
+  set -a
+  source .env
+  set +a
+fi
+
+# Without an argument, choose from the models that are already downloaded
+if [ -z "$1" ]; then
+  MODEL_NAME="$(./models.sh pick)" || exit 1
+else
+  MODEL_NAME=$1
+fi
 
 # Check if setup was run
 if [ ! -d ".venv" ]; then
