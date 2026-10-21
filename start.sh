@@ -31,6 +31,7 @@ export HF_HOME="$(pwd)/.cache/huggingface"
 
 echo "Starting Rapid-MLX with model: $MODEL_NAME"
 echo "Models will be cached in: $HF_HOME"
+echo "To chat with it, run ./chat.sh in another terminal (or open the web UI, see README)"
 echo ""
 
 # Start the server

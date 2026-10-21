@@ -77,6 +77,16 @@ To pick from the models you've already downloaded, run it without arguments:
 - **Llama 3.2 Vision (Strong overall)**: `mlx-community/Llama-3.2-11B-Vision-Instruct-4bit`
 - **Pixtral 12B**: `mlx-community/pixtral-12b-4bit`
 
+## Chat in the Terminal
+
+The quickest way to test a model: with `./start.sh` running, open a second terminal and run:
+
+```bash
+./chat.sh
+```
+
+This opens a chat with the model that is already loaded (no second copy is loaded). Type `/help` for commands and press `Ctrl-D` to exit. If the server uses a different port, pass it: `./chat.sh 8001`.
+
 ## Web Chat Interface (Open WebUI)
 
 A local web interface is provided via [Open WebUI](https://github.com/open-webui/open-webui), allowing you to interact with the running model in a ChatGPT-like interface.
